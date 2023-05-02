@@ -14,6 +14,7 @@ from .utils import (
     device_pairable,
     device_discoverable,
     device_powered,
+    unregister_spp
 )
 
 from .threads import WrapThread
@@ -372,6 +373,9 @@ class BluetoothServer:
             if self._conn_thread:
                 self._conn_thread.stop()
                 self._conn_thread = None
+
+    def unregisterSPP():
+        unregister_spp()
 
     def send(self, data):
         """

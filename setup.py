@@ -9,10 +9,10 @@ elif sys.version_info.major == 3:
 else:
     raise ValueError('Python version not identified')
 
-__project__ = 'bluedot'
+__project__ = 'bluedot-fork'
 __desc__ = 'A zero boiler plate bluetooth remote'
 __version__ = '2.0.0'
-__author__ = "Martin O'Hanlon"
+__author__ = "Martin O'Hanlon;Purushothaman G"
 __author_email__ = 'martin@ohanlonweb.com'
 __license__ = 'MIT'
 __url__ = 'https://github.com/martinohanlon/BlueDot'

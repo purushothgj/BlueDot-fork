@@ -144,3 +144,18 @@ def register_spp(port):
         #the spp profile has already been registered, ignore
         if str(e) != "org.bluez.Error.AlreadyExists: Already Exists":
             raise(e)
+
+def unregister_spp():
+    
+    bus = dbus.SystemBus()
+
+    manager = dbus.Interface(bus.get_object(SERVICE_NAME, "/org/bluez"), PROFILE_MANAGER)
+
+    path = "/bluez"
+   
+    try:
+        manager.UnregisterProfile(path)
+    except dbus.exceptions.DBusException as e:
+        #the spp profile has already been unregistered, ignore
+        if str(e) != "org.bluez.Error.DoesNotExist: Does Not Exist":
+            raise(e)
