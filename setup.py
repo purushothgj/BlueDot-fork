@@ -9,8 +9,8 @@ elif sys.version_info.major == 3:
 else:
     raise ValueError('Python version not identified')
 
-__project__ = 'bluedot-fork'
-__desc__ = 'A zero boiler plate bluetooth remote'
+__project__ = 'bluedot'
+__desc__ = 'A fork of Bluedot'
 __version__ = '2.0.1'
 __author__ = "Martin O'Hanlon;Purushothaman G"
 __author_email__ = 'martin@ohanlonweb.com'
@@ -88,7 +88,7 @@ The [online documentation](http://bluedot.readthedocs.io/en/latest/) describes h
 
 """
 if __name__ == '__main__':
-    setup(name='bluedot-fork',
+    setup(name='bluedot',
         version = __version__,
         description = __desc__,
         long_description=__long_description__,
