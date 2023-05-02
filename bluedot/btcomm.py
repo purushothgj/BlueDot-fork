@@ -374,7 +374,15 @@ class BluetoothServer:
                 self._conn_thread.stop()
                 self._conn_thread = None
 
-    def unregisterSPP():
+    def unregisterSPP(self):
+        """
+        Stops the Bluetooth server if its running.
+        """
+        if self._running:
+            if self._conn_thread:
+                self._conn_thread.stop()
+                self._conn_thread = None
+
         unregister_spp()
 
     def send(self, data):
