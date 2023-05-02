@@ -11,11 +11,11 @@ else:
 
 __project__ = 'bluedot-fork'
 __desc__ = 'A zero boiler plate bluetooth remote'
-__version__ = '2.0.0'
+__version__ = '2.0.1'
 __author__ = "Martin O'Hanlon;Purushothaman G"
 __author_email__ = 'martin@ohanlonweb.com'
 __license__ = 'MIT'
-__url__ = 'https://github.com/martinohanlon/BlueDot'
+__url__ = 'https://github.com/purushothgj/BlueDot-fork'
 __python_requires__ = '>=3.5'
 # __requires__ = ['dbus-python',]
 __keywords__ = [
@@ -88,7 +88,7 @@ The [online documentation](http://bluedot.readthedocs.io/en/latest/) describes h
 
 """
 if __name__ == '__main__':
-    setup(name='bluedot',
+    setup(name='bluedot-fork',
         version = __version__,
         description = __desc__,
         long_description=__long_description__,
